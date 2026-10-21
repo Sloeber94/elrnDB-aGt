@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>5040DB CHECK ON OPERATION OF WINDSCREEN MISTING SENSOR · ALFA GT</title>
+<meta name="description" content="test / check procedure. all engines; all production periods; only with equipment: Fogging sensor. Test &gt; 50 AUXILIARY UNITS &gt; 5040 AIR CONDITIONING CASING AND COMPONENTS &gt; 5040D AIR CONDITIONER CONTROLS &gt; 5040DB CHECK ON OPERATION OF WINDSCREEN MISTING SENSOR">
+<link rel="stylesheet" href="../ai.css">
+</head>
+<body>
+<header><a href="../index.html">ALFA GT workshop manual: text version</a> · <a href="../guide.html">guide</a></header>
+<main>
+<nav class="crumbs"><a href="125000739.html">Test</a> › <a href="125000782.html">50 AUXILIARY UNITS</a> › <a href="125000783.html">5040 AIR CONDITIONING CASING AND COMPONENTS</a> › <a href="125000784.html">5040D AIR CONDITIONER CONTROLS</a> › <span>5040DB CHECK ON OPERATION OF WINDSCREEN MISTING SENSOR</span></nav>
+<h1><span class="code">5040DB</span> CHECK ON OPERATION OF WINDSCREEN MISTING SENSOR</h1>
+<dl class="facts">
+<dt>Path</dt><dd>Test &gt; 50 AUXILIARY UNITS &gt; 5040 AIR CONDITIONING CASING AND COMPONENTS &gt; 5040D AIR CONDITIONER CONTROLS &gt; 5040DB CHECK ON OPERATION OF WINDSCREEN MISTING SENSOR</dd>
+<dt>Kind</dt><dd>test / check procedure</dd>
+<dt>Applies to</dt><dd>all engines; all production periods; only with equipment: Fogging sensor</dd>
+<dt>Interactive page</dt><dd><a href="https://sloeber94.github.io/elrnDB-aGt/en/#/125000785">https://sloeber94.github.io/elrnDB-aGt/en/#/125000785</a></dd>
+</dl>
+
+<section class="block"><p class="applies">Applies to: all engines; all production periods; only with equipment: Fogging sensor</p><p>With the Examiner set to voltmeter function, select 20 volts end of scale and 5 seconds.</p><p>Connect the black probe to the vehicle earth and the red probe to pin 3 of the mist sensor output signal.</p><p>Turn the ignition on and press the START button.</p><p>The signal displayed must be a PWM pulse train with a frequency of 100 hz and a Duty Cycle that varies between 10% and 90% as shown in the attached table.</p><aside class="note"><img class="icon" src="../../../media/767.jpg" alt="" loading="lazy"><p>The first 100 sensor output readings must not be considered (1 sec).</p></aside><p>Pin out:</p><ul><li>1.	Earth</li><li>2.	+15</li><li>3	Not connected.</li><li>4	Signal output</li></ul><figure class="photo"><img class="zoomable" src="../../../media/125000839.jpg" alt="" loading="lazy"></figure><p>PWM% Duty Cycle = T1 / T2 where:</p><ul><li>T1 = pulse duration</li><li>T2 = 1/f = 1/100 Hz = Transmission duration</li><li>T2 = 10msec +- 7%</li></ul><p>PWM from 20% to 70%</p><p>This is the normal sensor operating range.</p><p>Within this range the sensor supplies a PWM signal proportional to the demisting situation at the windscreen.</p><p>PWM = 10%</p><p>Indicates internal sensor fault This fault is defined as follows:</p><ul><li>Sensor self-diagnostics revealed an internal electrical fault</li></ul><p>PWM = 80%</p><p>This condition indicates a sensor limit condition. This is defined as follows:</p><ul><li>The sensor optics are saturated due to excessive direct sunlight.</li></ul><p>The signal is transmitted as long as the above limit condition persists.</p><p>PWM = 90%</p><p>This condition indicates a limit condition or sensor fault. This is defined as one of the following:</p><ul><li>Sensor optics are saturated due to excessive reflected energy. This may be due to a very high level of misting or an object between the windscreen surface and sensor.</li><li>Sensor internal temperature reached and exceeded 70°C. The internal process is disabled to avoid damage. A fault signal is transmitted as long as the excess temperature persists.</li></ul><p>PWM = 0 % and 100%</p><p>These two statuses will never be transmitted by the sensor. Certain hardware faults may be interpreted by the receiving input stage as PWM signals of 0% or 100%. This is due to the static nature of the signal (microcomputer not processing or under conditions of s.c. to +12V or GND or open circuits).</p><p>Messages transmitted by PWM</p><p>100% - Sensor off or fault in communication or s.c. to +12V</p><p>90% - Sensor saturated or blocked or with excess temperature</p><p>80% - Sensor faulty or directly radiated by sun</p><p>70% - Misting intensity from max to moderate</p><p>60% - Misting intensity from moderate to slight</p><p>50% - Misting intensity from light to perceptible</p><p>40% - Misting intensity slightly visible</p><p>30% - Misting intensity not visible to the human eye</p><p>20% - Windscreen clean - No misting</p><p>10% - Internal sensor fault</p><p>0% - Sensor off or fault in communication or short circuit to GND.</p></section>
+
+
+</main>
+<footer>Interactive version: <a href="https://sloeber94.github.io/elrnDB-aGt/en/">https://sloeber94.github.io/elrnDB-aGt/en/</a> · <a href="../llms.txt">llms.txt</a></footer>
+</body>
+</html>
